@@ -25,7 +25,10 @@
  * cases.
  * 
  ***************************************************************************************/
-
+#include <iostream>
+#include <vector>
+#include <climits>
+using namespace std;
 
 /* Recursive solution - TIME LIMIT ERROR */
 class Solution {
@@ -42,7 +45,7 @@ public:
         }
         return result == INT_MAX ? -1 : result;
     }
-}
+};
 
 
  /* 
@@ -61,7 +64,7 @@ public:
  * can return -1.
  * 
  */
-class Solution {
+class Solution2 {
 public:
     
     int coinChange(vector<int>& coins, int amount) {
@@ -83,7 +86,7 @@ public:
 
 
 //Another DP implmentation, same idea above 
-class Solution {
+class Solution3 {
 public:
     int coinChange(vector<int>& coins, int amount) {
         const int MAX = amount +1;
@@ -101,3 +104,13 @@ public:
         return dp[amount]==MAX ? -1 : dp[amount];
     }
 };
+
+int main()
+{
+    Solution2 solution;
+    vector<int> coins = {5, 2, 1}; // replace with your own coins
+    int amount = 11;               // replace with your own amount
+    int minCoins = solution.coinChange(coins, amount);
+    cout << "Minimum number of coins to make " << amount << ": " << minCoins << endl;
+    return 0;
+}

@@ -68,7 +68,7 @@ public:
     }
 
     // we also can store nums[i] into map, and find target - nums[i]
-    vector<int> twoSum(vector<int>& nums, int target) {
+    vector2<int> twoSum(vector<int>& nums, int target) {
         unordered_map<int, int> m;
         vector<int> result;
         for (int i=0; i<nums.size(); i++) {
@@ -82,3 +82,6 @@ public:
         return result;
     }
 };
+
+
+

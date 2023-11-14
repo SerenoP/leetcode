@@ -10,6 +10,8 @@
 * 
 *               
 **********************************************************************************/
+#include <iostream>
+using namespace std;
 
 class Solution {
 public:
@@ -30,3 +32,12 @@ public:
         return climbStairs(n-1) + climbStairs(n-2);
     }
 };
+
+int main()
+{
+    Solution solution;
+    int stairs = 5; // replace with your own number of stairs
+    int ways = solution.climbStairs(stairs);
+    cout << "Number of ways to climb " << stairs << " stairs: " << ways << endl;
+    return 0;
+}

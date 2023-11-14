@@ -25,6 +25,10 @@
  * Explanation: In this case, no transaction is done, i.e. max profit = 0.
  * 
  ******************************************************************************************************/
+#include <iostream>
+#include <vector>
+#include <climits>
+using namespace std;
 
 class Solution {
 public:
@@ -67,7 +71,7 @@ public:
 };
 
 
-class Solution {
+class Solution2 {
 public:
     int maxProfit(vector<int>& prices) {
         int buy = INT_MAX;
@@ -81,3 +85,13 @@ public:
         return profit;
     }
 };
+
+
+int main()
+{
+    Solution solution;
+    vector<int> prices = {7, 1, 5, 3, 6, 4}; // replace with your own prices
+    int maxProfit = solution.maxProfit(prices);
+    cout << "Maximum profit: " << maxProfit << endl;
+    return 0;
+}
