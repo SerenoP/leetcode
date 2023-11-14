@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "LeetCode/leetcode"
+		}
+	],
+	"settings": {
+		"editor.tabSize": 4,
+		"files.autoSave": "onFocusChange",
+		// Add other settings as needed
+	
+	}
+}
+
